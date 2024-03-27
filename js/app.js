@@ -389,7 +389,7 @@ const session = (() => {
                 }
             })
             .catch((err) => {
-                alert(`Terdapat kesalahan: ${err}`);
+                alert(`There was an error: ${err}`);
                 window.location.reload();
                 return;
             });
@@ -423,7 +423,7 @@ const like = (() => {
         let id = button.getAttribute('data-uuid');
 
         if (!token) {
-            alert('Terdapat kesalahan, token kosong !');
+            alert('There was an error, the token is empty !');
             window.location.reload();
             return;
         }
@@ -448,7 +448,7 @@ const like = (() => {
                     }
                 })
                 .catch((err) => {
-                    alert(`Terdapat kesalahan: ${err}`);
+                    alert(`There was an error: ${err}`);
                 });
 
         } else {
@@ -465,7 +465,7 @@ const like = (() => {
                     }
                 })
                 .catch((err) => {
-                    alert(`Terdapat kesalahan: ${err}`);
+                    alert(`There was an error: ${err}`);
                 });
         }
 
@@ -528,28 +528,28 @@ const comment = (() => {
         let token = localStorage.getItem('token') ?? '';
 
         if (token.length == 0) {
-            alert('Terdapat kesalahan, token kosong !');
+            alert('There was an error, the token is empty !');
             window.location.reload();
             return;
         }
 
         if (nama.length == 0) {
-            alert('nama tidak boleh kosong');
+            alert('name cannot be empty');
             return;
         }
 
         if (nama.length >= 35) {
-            alert('panjangan nama maksimal 35');
+            alert('maximum name length 35');
             return;
         }
 
         if (hadir == 0) {
-            alert('silahkan pilih kehadiran');
+            alert('please select attendance');
             return;
         }
 
         if (komentar.length == 0) {
-            alert('pesan tidak boleh kosong');
+            alert('message cannot be empty');
             return;
         }
 
@@ -576,7 +576,7 @@ const comment = (() => {
                 }
             })
             .catch((err) => {
-                alert(`Terdapat kesalahan: ${err}`);
+                alert(`There was an error: ${err}`);
             });
 
         if (isSuccess) {
@@ -603,7 +603,7 @@ const comment = (() => {
         let token = localStorage.getItem('token') ?? '';
 
         if (token.length == 0) {
-            alert('Terdapat kesalahan, token kosong !');
+            alert('There was an error, the token is empty !');
             window.location.reload();
             return;
         }
@@ -640,7 +640,7 @@ const comment = (() => {
             })
             .catch((err) => {
                 resetForm();
-                alert(`Terdapat kesalahan: ${err}`);
+                alert(`There was an error: ${err}`);
             });
 
         document.getElementById('ucapan').scrollIntoView({ behavior: 'smooth' });
@@ -714,7 +714,7 @@ const comment = (() => {
 
         let token = localStorage.getItem('token') ?? '';
         if (token.length == 0) {
-            alert('Terdapat kesalahan, token kosong !');
+            alert('There was an error, the token is empty !');
             window.location.reload();
             return;
         }
@@ -732,7 +732,7 @@ const comment = (() => {
                     }
                 }
             })
-            .catch((err) => alert(`Terdapat kesalahan: ${err}`));
+            .catch((err) => alert(`There was an error: ${err}`));
     };
 
     const renderLoading = (num) => {
@@ -766,23 +766,23 @@ const comment = (() => {
         let id = document.getElementById('id-balasan').getAttribute('data-uuid');
 
         if (token.length == 0) {
-            alert('Terdapat kesalahan, token kosong !');
+            alert('There was an error, the token is empty !');
             window.location.reload();
             return;
         }
 
         if (nama.length == 0) {
-            alert('nama tidak boleh kosong');
+            alert('name cannot be empty');
             return;
         }
 
         if (nama.length >= 35) {
-            alert('panjangan nama maksimal 35');
+            alert('maximum name length 35');
             return;
         }
 
         if (komentar.length == 0) {
-            alert('pesan tidak boleh kosong');
+            alert('message cannot be empty');
             return;
         }
 
@@ -809,7 +809,7 @@ const comment = (() => {
                 }
             })
             .catch((err) => {
-                alert(`Terdapat kesalahan: ${err}`);
+                alert(`There was an error: ${err}`);
             });
 
         if (isSuccess) {
@@ -832,18 +832,18 @@ const comment = (() => {
         let komentar = formPesan.value;
 
         if (token.length == 0) {
-            alert('Terdapat kesalahan, token kosong !');
+            alert('There was an error, the token is empty !');
             window.location.reload();
             return;
         }
 
         if (document.getElementById(id).getAttribute('data-parent') === 'true' && hadir == 0) {
-            alert('silahkan pilih kehadiran');
+            alert('please select attendance');
             return;
         }
 
         if (komentar.length == 0) {
-            alert('pesan tidak boleh kosong');
+            alert('message cannot be empty');
             return;
         }
 
@@ -868,7 +868,7 @@ const comment = (() => {
                 }
             })
             .catch((err) => {
-                alert(`Terdapat kesalahan: ${err}`);
+                alert(`There was an error: ${err}`);
             });
 
         if (isSuccess) {
@@ -893,7 +893,7 @@ const comment = (() => {
         let id = button.getAttribute('data-uuid');
 
         if (token.length == 0) {
-            alert('Terdapat kesalahan, token kosong !');
+            alert('There was an error, the token is empty !');
             window.location.reload();
             return;
         }
@@ -913,7 +913,7 @@ const comment = (() => {
                 }
             })
             .catch((err) => {
-                alert(`Terdapat kesalahan: ${err}`);
+                alert(`There was an error: ${err}`);
             });
 
         button.innerText = tmp;
@@ -931,7 +931,7 @@ const comment = (() => {
         let token = localStorage.getItem('token') ?? '';
 
         if (token.length == 0) {
-            alert('Terdapat kesalahan, token kosong !');
+            alert('There was an error, the token is empty !');
             window.location.reload();
             return;
         }
@@ -964,7 +964,7 @@ const comment = (() => {
                 }
             })
             .catch((err) => {
-                alert(`Terdapat kesalahan: ${err}`);
+                alert(`There was an error: ${err}`);
             });
 
         button.disabled = false;
