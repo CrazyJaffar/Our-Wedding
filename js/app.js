@@ -979,7 +979,7 @@ const comment = (() => {
 
         resetForm();
     };
-
+	
     return {
         ucapan,
         renderLoading,
